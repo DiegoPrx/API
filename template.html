@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Plantilla: HTML + CSS + JS - Organización</title>
+    <!-- Tip: si ya usas Google Fonts en index.html, ajusta aquí o deja que el proyecto las cargue -->
+    <link rel="stylesheet" href="./template.css">
+  </head>
+  <body>
+    <!-- Encabezado / hero -->
+    <header class="t-hero">
+      <div class="t-hero-inner">
+        <h1>Plantilla organizada</h1>
+        <p class="t-sub">Ejemplo simple para separar <strong>HTML</strong>, <strong>CSS</strong> y <strong>JS</strong>.</p>
+      </div>
+    </header>
+
+    <main class="t-main">
+      <section class="t-search">
+        <label for="q" class="t-label">Buscar</label>
+        <div class="t-input-wrap">
+          <input id="q" class="t-input" type="search" placeholder="Buscar series..." aria-label="Buscar series">
+          <button id="clear" class="t-btn t-btn-ghost" title="Limpiar">✕</button>
+        </div>
+        <p class="t-note">Escribe y pulsa Enter o espera el debounce para ver la demo del JS.</p>
+      </section>
+
+      <section class="t-grid" id="resultados">
+        <!-- Los resultados se inyectarán desde template.js -->
+      </section>
+
+      <aside class="t-aside" id="favoritos">
+        <h3>Favoritos <span id="contador">0</span></h3>
+        <ul id="lista-fav" class="t-list"></ul>
+      </aside>
+    </main>
+
+    <footer class="t-foot">Plantilla creada para organizar archivos estáticos — texto en español.</footer>
+
+    <script src="./template.js" defer></script>
+  </body>
+</html>
