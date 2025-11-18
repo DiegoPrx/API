@@ -1,22 +1,12 @@
-/* Layout general */
-.contenido-principal {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-}
-
-.col-izq {
-  flex: 1;
-}
-
-.col-der {
-  width: 320px;
-}
-
-/* Panel de búsqueda */
-.buscar-wrapper {
-  max-width: 720px;
+#root {
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-contenedor {
+  padding: 2rem;
+  color: var(--texto);
 }
 
 .input-buscar {
@@ -28,7 +18,15 @@
   color: var(--texto);
 }
 
-/* Grid de series */
+.contenido-principal {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.col-izq { flex: 1; }
+.col-der { width: 320px; }
+
 .grid-series {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
