@@ -31,3 +31,5 @@ export default function ListaFavoritos({ favoritos, onSelect, onQuitar }) {
     </section>
   );
 }
+
+
