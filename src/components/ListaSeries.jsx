@@ -41,3 +41,5 @@ export default function ListaSeries({ series, onSelect, favoritos, onFavorito })
     </div>
   );
 }
+
+
